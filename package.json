@@ -1,0 +1,16 @@
+{
+  "name": "supplier-risk-dashboard",
+  "version": "1.0.0",
+  "description": "Supplier Risk & Lead-Time Tracking Dashboard",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node index.js",
+    "client": "cd client && npm run dev",
+    "seed": "cd server && node seed.js",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
